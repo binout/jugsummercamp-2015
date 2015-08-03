@@ -1,0 +1,37 @@
+= JugSummerCamp 2015
+:compat-mode:
+
+Material for quickie talks at http://www.jugsummercamp.org/edition/6[JugSummerCamp 2015]
+
+== Pre-requesites
+
+* Ant
+* Internet
+
+== Slide generation
+
+I'm using https://github.com/asciidoctor/asciidoctor-ant[+asciidoctor+ ant plugin] with +deckjs+ as +asciidoctor+ backend.
+
+You can find more information on asciidoctor site :
+
+* http://asciidoctor.org/docs/install-and-use-deckjs-backend/
+
+You can generate HTML slides with the following command :
+[source]
+----
+ant
+----
+
+=== Créer son blog en moins de 5 minutes !
+[source]
+----
+ant hubpress
+----
+The presentation is in +dist/+ folder.
+
+=== Micro JavaEE
+[source]
+----
+ant micro-javaee
+----
+The presentation is in +dist/+ folder.

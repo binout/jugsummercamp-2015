@@ -1,0 +1,97 @@
+= Créer son blog en moins de 5 min !
+Benoit Prioux <benoit.prioux@gmail.com>
+:icons: font
+
+image::jugsummercamp.png[float="right"]
+
+== Me
+
+image::avatar.png[float="right"]
+
+icon:twitter[] @binout +
+icon:github[] https://github.com/binout
+
+* Développeur Java depuis presque 10 ans
+
+image::bordeauxjug.png[float="right"]
+
+* Membre du Bordeaux JUG
+
+image::asciidoctor.png[float="right"]
+
+* Commiteur Asciidoctor
+
+image::lectra.png[float="right"]
+
+* Technical Leader chez Lectra,
+numéro un mondial des solutions dédiées à l'industrie du textile (machines et logiciels)
+
+== Tout le monde a un blog
+
+* C'est cool :-)
+
+* Plein de choses à raconter
+
+[quote, One person at a time]
+Write a blog, change the world.
+
+* Au début, un article par semaine, puis un par mois, puis un par an ....
+
+* Quel est le problème ?
+
+== Problème 1 : le temps
+
+C'est long d'écrire un article de blog, donc il ne faut pas perdre du temps avec la forme.
+
+LA SOLUTION : Asciidoc !
+
+== Asciidoc
+
+[source]
+----
+= Hello, Jug Summer Camp!
+Benoit Prioux <benoit.prioux@gmail.com>
+
+Introduction à http://asciidoc.org[AsciiDoc].
+
+== Première Section
+
+* foo
+* bar
+
+== Deuxième Section
+
+1. item 1
+2. item 2
+
+TIP: http://asciidoctor.org/docs/user-manual
+----
+
+== Problème 2 : les outils
+
+* Soit on est des geeks, et on installe sa forge de blog sur son serveur
+* Soit on fait son blog sur Wordpress, et puis on s'adapte à l'interface, aux contraintes, ...
+
+Pourtant la documentation, c'est comme le code.
+
+LA SOLUTION : GITHUB !
+
+== HubPress
+
+Github + Asciidoc = HubPress, a web application to build your blog on GitHub
+
+Anthonny Quérouil
+
+== Démo
+
+Je veux écrire un blog sur les chats.
+
+== Synthèse
+
+1. Je créé un compte sur Github
+2. Je forke le projet https://github.com/HubPress/hubpress.io
+3. Je change la configuration (hubpress/config.json) si besoin
+4. J'utilise l'interface d'administration pour publier mes articles
+
+
+== A vous de forker !
