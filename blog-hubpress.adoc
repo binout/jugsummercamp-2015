@@ -11,7 +11,7 @@ image::avatar.png[float="right"]
 icon:twitter[] @binout +
 icon:github[] https://github.com/binout
 
-* Développeur Java depuis presque 10 ans
+* Développeur Java depuis 10 ans
 
 image::bordeauxjug.png[float="right"]
 
