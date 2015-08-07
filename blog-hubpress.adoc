@@ -28,16 +28,22 @@ numéro un mondial des solutions dédiées à l'industrie du textile (machines e
 
 == Tout le monde a un blog
 
-* C'est cool :-)
-
-* Plein de choses à raconter
-
 [quote, One person at a time]
 Write a blog, change the world.
+C'est un moyen d'historiser vos trucs et astuces de développeur.
 
-* Au début, un article par semaine, puis un par mois, puis un par an ....
+== Mon blog
 
-* Quel est le problème ?
+http://javaonemorething.wordpress.com depuis 2011.
+
+Courbe des articles entre 2011 et 2015.
+
+C'est vraiment dur de gardee un von rythme d'écriture, pourtant ce ne sont pas les sujets qui manquent...
+
+== Alors pourquoi ?
+
+Touver une image
+
 
 == Problème 1 : le temps
 
