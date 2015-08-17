@@ -35,3 +35,7 @@ The presentation is in +dist/+ folder.
 ant micro-javaee
 ----
 The presentation is in +dist/+ folder.
+
+== Copyright
+Pour les images, elles reste la propriété de Serli. L'accord préalable de Serli est nécessaire pour toute production et/ou utilisation ultérieure. Une reproduction ou imitation, sous quelque forme ou par quelque procédé que ce soit, est strictement interdite. 
+
