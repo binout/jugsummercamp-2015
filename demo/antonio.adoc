@@ -1,0 +1,25 @@
+= Antonio Goncalves
+:icons: font
+
+== Bio
+
+Antonio Goncalves est un développeur senior qui vit à paris.
+Ancien de chez BEA il est aujourd'hui consultant Java EE indépendant avec une bonne expertise des serveurs d'application comme JBoss, Weblogic ou GlassFish.
+Il est l'un des fondateurs du Paris Java User Group et plus récemment de Devoxx France.
+Antonio est aussi l'une des voix des CastCodeurs, auteur de livres sur Java EE.... et Java Champion.
+
+icon:twitter[] @agoncal
+
+icon:pencil[] http://antoniogoncalves.org/
+
+icon:github[] https://github.com/agoncal
+
+== Vidéos
+
+* Antonio Goncalves Introduces Devoxx France 2015
+
+video::XwFgr1aVubE[youtube]
+
+* NightHacking with Antonio Goncalves
+
+video::xKciaIPuaSc[youtube]

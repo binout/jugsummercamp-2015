@@ -26,30 +26,44 @@ image::lectra.png[float="right"]
 * Technical Leader chez Lectra,
 numéro un mondial des solutions dédiées à l'industrie du textile (machines et logiciels)
 
-== Tout le monde a un blog
+== Ecrire un blog
 
 [quote, One person at a time]
 Write a blog, change the world.
-C'est un moyen d'historiser vos trucs et astuces de développeur.
 
 == Mon blog
 
-http://javaonemorething.wordpress.com depuis 2011.
+http://javaonemorething.wordpress.com
 
-Courbe des articles entre 2011 et 2015.
+* depuis 2011
+* retours sur des conférences
+* trucs et astuces
 
-C'est vraiment dur de gardee un von rythme d'écriture, pourtant ce ne sont pas les sujets qui manquent...
+image::javaonemorething.png[]
 
+== Nombre d'articles par an
+
+image::courbe-blog.png[]
+
+[canvas-image="images/why.png"]
 == Alors pourquoi ?
 
-Touver une image
+[canvas-image="images/time.png"]
+== Problème n°1 : le temps
 
+[role="canvas-caption"]
+Problème n°1 : le temps
 
-== Problème 1 : le temps
+== Une solution ?
 
-C'est long d'écrire un article de blog, donc il ne faut pas perdre du temps avec la forme.
+Choisir un language de `balisage` pour faciliter l'écriture des articles :
 
-LA SOLUTION : Asciidoc !
+* on se concentre plus sur le fond que la forme
+* plus adapté à des articles techniques (code source)
+
+SOLUTION : *ASCIIDOC* !
+
+image::asciidoctor.png[float="right"]
 
 == Asciidoc
 
@@ -73,24 +87,46 @@ Introduction à http://asciidoc.org[AsciiDoc].
 TIP: http://asciidoctor.org/docs/user-manual
 ----
 
-== Problème 2 : les outils
+[canvas-image="images/outils.png"]
+== Problème n°2 : les outils
 
-* Soit on est des geeks, et on installe sa forge de blog sur son serveur
-* Soit on fait son blog sur Wordpress, et puis on s'adapte à l'interface, aux contraintes, ...
+[role="canvas-caption"]
+Problème n°2 : les outils et l'hébergement
 
-Pourtant la documentation, c'est comme le code.
+== Solutions ...
 
-LA SOLUTION : GITHUB !
+* On installe sa _forge_ pour son blog ... mais :
+
+** ça prend du temps à installer
+** il faut maintenir et mettre à jour
+
+* On utilise _wordpress.com_
+
+** ne supporte pas asciidoc
+** on doit utiliser une IHM
+
+== Autre solution
+
+On utilise le même hébergement que le code.
+
+SOLUTION : *GITHUB* !
+
+image::github.png[float="right"]
 
 == HubPress
 
-Github + Asciidoc = HubPress, a web application to build your blog on GitHub
+Github + Asciidoc = HubPress
 
-Anthonny Quérouil
+image::hubpress.png[float="right"]
+
+* une application web pour faire un blog sur Github
+* par Anthonny Quérouil @anthonny_q
+
+J'ai migré mon blog -> http://binout.github.io/javaonemorething/
 
 == Démo
 
-Je veux écrire un blog sur les chats.
+video::7gP3i4tHlRM[youtube]
 
 == Synthèse
 
@@ -99,5 +135,8 @@ Je veux écrire un blog sur les chats.
 3. Je change la configuration (hubpress/config.json) si besoin
 4. J'utilise l'interface d'administration pour publier mes articles
 
-
+[canvas-image="images/get-app-hubpress.png"]
 == A vous de forker !
+
+[role="canvas-caption"]
+A vous de forker !

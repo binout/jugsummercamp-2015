@@ -1,0 +1,25 @@
+= Nicolas de Loof
+:icons: font
+
+== Bio
+
+`Java Architect` pendant 14 ans dans une grande SSII, techno-addict et contributeur open-source, j'ai rejoins l'équipe Apache Maven en 2007, développant le plugin GWT, et plus tard la communauté Jenkins.
+Profitant de nombreuses relations dans la communauté Java, je fonde le BreizhJUG en 2008, puis le BreizhCamp.
+
+En 2011 je quitte le monde du service pour celui du as-a-Service - je rejoins CloudBees sur un project ambitieux : faire tourner Java dans le Cloud, du code source à la production.
+
+icon:twitter[] @ndeloof
+
+icon:pencil[] https://blog.loof.fr/
+
+icon:github[] https://github.com/ndeloof
+
+== Vidéos
+
+* BdxIO 2014 - Nicolas De Loof : Docker de "Zéro" à "Héros"
+
+video::CUVBNrqFRHk[youtube]
+
+* RivieraDEV 2011 - GWT - Nicolas de Loof
+
+video::FJzcNqr2_wQ[youtube]
