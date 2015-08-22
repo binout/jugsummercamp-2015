@@ -25,3 +25,79 @@ image::lectra.png[float="right"]
 
 * Technical Leader chez Lectra,
 numéro un mondial des solutions dédiées à l'industrie du textile (machines et logiciels)
+
+[canvas-image="images/microservices.png"]
+== Micro Services
+
+// Description rapide de l'architecture
+
+== JavaEE vs JEE
+
+* Depuis JavaEE5, il n'y a pas que le nom qui a changé ...
+
+== JavaEE vs Micro Services ?
+
+* Petit = Packaging war très léger
+* Rapide à déployer (si si c'est vrai)
+* Tout ce qu'il faut : JPA + CDI + JAXRS
+
+[canvas-image="images/cargo-tracker.png"]
+== JavaEE et DDD
+
+[role="canvas-caption"]
+JavaEE et DDD
+
+== JavaEE loves Micro Services
+
+[canvas-image="images/pipe.png"]
+== Et le serveur d'application ?
+
+[role="canvas-caption"]
+Et le serveur d'application ?
+
+== Docker
+
+* Image avec le serveur d'application
+
+== Embedded
+
+* Plus besoin de pré-requis, le serveur d'application est embarqué.
+* Même code source que pour un packaging war
+
+[source, java]
+----
+java -jar my-app-in-application-server.jar
+----
+
+== TomEE
+//https://rmannibucau.wordpress.com/2014/03/24/java-jar-my-app-in-tomee-jar/
+* TomEE Maven Plugin
+
+[source, java]
+----
+java -jar my-app-in-tomee.jar
+----
+
+== Payara
+
+* Payara Micro
+
+[source, java]
+----
+java -jar payara-micro.jar --deploy test.war
+----
+
+== Wildfly
+
+* Swarm
+
+[source, java]
+----
+java -jar ./target/myapp-swarm-jar
+----
+
+== Démo
+
+... si on a le temps :-)
+
+== Merci
