@@ -56,14 +56,17 @@ Problème n°1 : le temps
 
 == Une solution ?
 
-Choisir un language de `balisage` pour faciliter l'écriture des articles :
+Choisir un language de `balisage` léger pour faciliter l'écriture des articles :
 
 * on se concentre plus sur le fond que la forme
+* un simple éditeur de texte suffit
 * plus adapté à des articles techniques (code source)
+
+'''
 
 SOLUTION : *ASCIIDOC* !
 
-image::asciidoctor.png[float="right"]
+image::asciidoctor-big.png[]
 
 == Asciidoc
 
@@ -87,42 +90,86 @@ Introduction à http://asciidoc.org[AsciiDoc].
 TIP: http://asciidoctor.org/docs/user-manual
 ----
 
+== Asciidoc et Blog
+
+[source]
+-----
+= Java 8 et Streams
+Benoit Prioux <benoit.prioux@gmail.com>
+
+== Introduction
+
+La version *8* du langage `Java` est sortie le _18 mars 2014_, 17 ans après la première version.
+
+
+== Les Streams
+
+[source, java]
+----
+public class PersonRepository {
+    
+    public List<Person> getPersonOlderThan(int age) {
+        return all()
+                .stream()
+                .filter(p->p.age()>age)
+                .collector(Collectors.toList());
+    }
+}
+----
+-----
+
+== Asciidoc et Blog
+
+image::article-adoc.png[]
+
 [canvas-image="images/outils.png"]
 == Problème n°2 : les outils
 
 [role="canvas-caption"]
 Problème n°2 : les outils et l'hébergement
 
-== Solutions ...
+== Solution du `vrai` développeur
 
-* On installe sa _forge_ pour son blog ... mais :
+On installe sa _forge_ pour son blog ... mais :
 
-** ça prend du temps à installer
-** il faut maintenir et mettre à jour
+* ça prend du temps à installer
+* il faut maintenir et mettre à jour
 
-* On utilise _wordpress.com_
+image::jekyll.png[]
+image::awestruct.png[]
 
-** ne supporte pas asciidoc
-** on doit utiliser une IHM
+== Solution `rapide` 
 
-== Autre solution
+http://wordpress.com ... mais :
 
-On utilise le même hébergement que le code.
+* ne supporte pas asciidoc
+* on doit utiliser une IHM à la Word
 
-SOLUTION : *GITHUB* !
+image::wordpress.png[]
 
-image::github.png[float="right"]
+== Autre solution ?
+
+Et si on utilisait le même hébergement que le code.
+
+'''
+
+SOLUTION : *GITHUB* ? avec `GITHUP PAGES`
+
+image::github.png[]
 
 == HubPress
 
-Github + Asciidoc = HubPress
+une application web pour faire un blog sur Github
 
-image::hubpress.png[float="right"]
+image::eq.png[]
 
-* une application web pour faire un blog sur Github
-* par Anthonny Quérouil @anthonny_q
+image::anthonny.png[]
 
-J'ai migré mon blog -> http://binout.github.io/javaonemorething/
+== Migration Wordpress -> HubPress
+
+http://binout.github.io/javaonemorething
+
+image::hubpress-javaonemorething.png[]
 
 == Démo
 
@@ -135,8 +182,6 @@ video::7gP3i4tHlRM[youtube]
 3. Je change la configuration (hubpress/config.json) si besoin
 4. J'utilise l'interface d'administration pour publier mes articles
 
-[canvas-image="images/get-app-hubpress.png"]
 == A vous de forker !
 
-[role="canvas-caption"]
-A vous de forker !
+image::get-app-hubpress.png[]

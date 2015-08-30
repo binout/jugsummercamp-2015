@@ -26,10 +26,13 @@ image::lectra.png[float="right"]
 * Technical Leader chez Lectra,
 numéro un mondial des solutions dédiées à l'industrie du textile (machines et logiciels)
 
-[canvas-image="images/microservices.png"]
 == Micro Services
 
-// Description rapide de l'architecture
+image::microservices1.png[]
+
+== Micro Services
+
+image::microservices2.png[]
 
 == JavaEE vs JEE
 
@@ -41,19 +44,15 @@ numéro un mondial des solutions dédiées à l'industrie du textile (machines e
 * Rapide à déployer (si si c'est vrai)
 * Tout ce qu'il faut : JPA + CDI + JAXRS
 
-[canvas-image="images/cargo-tracker.png"]
 == JavaEE et DDD
 
-[role="canvas-caption"]
-JavaEE et DDD
+image::cargo-tracker.png[]
 
 == JavaEE loves Micro Services
 
-[canvas-image="images/pipe.png"]
 == Et le serveur d'application ?
 
-[role="canvas-caption"]
-Et le serveur d'application ?
+image::pipe.png[]
 
 == Docker
 
@@ -98,6 +97,6 @@ java -jar ./target/myapp-swarm-jar
 
 == Démo
 
-... si on a le temps :-)
+https://github.com/binout/micro-javaee
 
 == Merci
