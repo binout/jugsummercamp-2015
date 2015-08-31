@@ -36,21 +36,59 @@ image::microservices2.png[]
 
 == JavaEE vs JEE
 
-* Depuis JavaEE5, il n'y a pas que le nom qui a changé ...
+Depuis JavaEE5, il n'y a pas que le nom qui a changé ...
+
+Principes de JavaEE :
+
+* Convention over Configuration
+* Productivité
+* Modularité
+* Simplification
 
 == JavaEE vs Micro Services ?
 
-* Petit = Packaging war très léger
-* Rapide à déployer (si si c'est vrai)
-* Tout ce qu'il faut : JPA + CDI + JAXRS
+JavaEE monolithique : FAUX, pas seulement
 
-== JavaEE et DDD
+== Caractéristique 1
 
-image::cargo-tracker.png[]
+[quote, Le touilleur express]
+Un seul livrable, à partir d’un seul code source
+
+Le WAR est un livrable standard, qui peut être très léger
+
+== Caractéristique 2
+
+[quote, Le touilleur express]
+Connecté sur le réseau et expose une API REST
+
+JAX-RS est très facile à utiliser pour développer une API REST
+
+== Caractéristique 3
+
+[quote, Le touilleur express]
+Embarque ses propres solutions techniques, et intègre l’ensemble des couches logicielles (de l’UI à la persistence)
+
+JPA + CDI + JAX-RS (+JSF?), tout ce qu'il faut dans le standard
+
+== Caractéristique 4
+
+[quote, Le touilleur express]
+Industrialisé pour se déployer automatiquement dès lors que les tests unitaires et d’intégrations fonctionnent
+
+Arquillian, le framework de test d'intégration JavaEE
 
 == JavaEE loves Micro Services
 
-== Et le serveur d'application ?
+Bref,
+
+== Caractéristique 5
+
+[quote, Le touilleur express]
+Une application autonome avec son environnement d’exécution, son propre cycle de vie
+
+Euh... bah un WAR doit se déployer dans un serveur d'application ...
+
+== Le serveur d'application, un pré-requis ?
 
 image::pipe.png[]
 
