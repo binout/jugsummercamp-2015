@@ -179,8 +179,11 @@ video::7gP3i4tHlRM[youtube]
 
 1. Je créé un compte sur Github
 2. Je forke le projet https://github.com/HubPress/hubpress.io
-3. Je change la configuration (hubpress/config.json) si besoin
-4. J'utilise l'interface d'administration pour publier mes articles
+3. Je change la configuration (hubpress/config.json)
+4. Pour écrire mes articles :
+* soit j'utilise l'interface d'administration
+* soit je commit dans mon repo github
+5. J'utilise l'interface d'administration pour publier mes articles
 
 == A vous de forker !
 
