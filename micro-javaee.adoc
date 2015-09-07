@@ -38,6 +38,8 @@ image::microservices2.png[]
 
 Depuis JavaEE5, il n'y a pas que le nom qui a changé ...
 
+image::javaee-logo.png[float="right"]
+
 Principes de JavaEE :
 
 * Convention over Configuration
@@ -45,15 +47,24 @@ Principes de JavaEE :
 * Modularité
 * Simplification
 
-== JavaEE vs Micro Services ?
+== JavaEE : monolithique ?
 
-JavaEE monolithique : FAUX, pas seulement
+.http://blog.arungupta.me/monolithic-microservices-refactoring-javaee-applications/
+image::javaee-monolithic.png[]
+
+[canvas-image="images/microservices-caracteristics.png"]
+== Micro Services : les caractéristiques
+
+[role="canvas-caption"]
+Micro Services : les caractéristiques
 
 == Caractéristique 1
 
 [quote, Le touilleur express]
 Un seul livrable, à partir d’un seul code source
 
+[options="step"]
+[quote]
 Le WAR est un livrable standard, qui peut être très léger
 
 == Caractéristique 2
@@ -61,6 +72,8 @@ Le WAR est un livrable standard, qui peut être très léger
 [quote, Le touilleur express]
 Connecté sur le réseau et expose une API REST
 
+[options="step"]
+[quote]
 JAX-RS est très facile à utiliser pour développer une API REST
 
 == Caractéristique 3
@@ -68,6 +81,8 @@ JAX-RS est très facile à utiliser pour développer une API REST
 [quote, Le touilleur express]
 Embarque ses propres solutions techniques, et intègre l’ensemble des couches logicielles (de l’UI à la persistence)
 
+[options="step"]
+[quote]
 JPA + CDI + JAX-RS (+JSF?), tout ce qu'il faut dans le standard
 
 == Caractéristique 4
@@ -75,17 +90,22 @@ JPA + CDI + JAX-RS (+JSF?), tout ce qu'il faut dans le standard
 [quote, Le touilleur express]
 Industrialisé pour se déployer automatiquement dès lors que les tests unitaires et d’intégrations fonctionnent
 
+[options="step"]
+[quote]
 Arquillian, le framework de test d'intégration JavaEE
 
-== JavaEE loves Micro Services
+== JavaEE AND Micro Services
 
-Bref,
+.http://blog.arungupta.me/monolithic-microservices-refactoring-javaee-applications/
+image::javaee-microservices.png[]
 
 == Caractéristique 5
 
 [quote, Le touilleur express]
 Une application autonome avec son environnement d’exécution, son propre cycle de vie
 
+[options="step"]
+[quote]
 Euh... bah un WAR doit se déployer dans un serveur d'application ...
 
 == Le serveur d'application, un pré-requis ?
@@ -94,43 +114,58 @@ image::pipe.png[]
 
 == Docker
 
-* Image avec le serveur d'application
+* Image avec : Serveur d'Application + WAR
+
+image::docker.png[]
 
 == Embedded
 
 * Plus besoin de pré-requis, le serveur d'application est embarqué.
+
+image::embedded.png[]
+
 * Même code source que pour un packaging war
 
+* Démarre en une ligne de commande :
 [source, java]
 ----
 java -jar my-app-in-application-server.jar
 ----
 
-== TomEE
+== TomEE Maven Plugin
 //https://rmannibucau.wordpress.com/2014/03/24/java-jar-my-app-in-tomee-jar/
-* TomEE Maven Plugin
+image::tomee.png[]
+
+`mvn tomee:exec` génère un jar avec à l'intérieur un TomEE _ready to run_
 
 [source, java]
 ----
 java -jar my-app-in-tomee.jar
 ----
+dézippe TomEE localement et déploie l'application.
 
 == Payara
 
-* Payara Micro
+image::payara.png[]
+
+`Payara Micro`, un bootstrap de _50 Mo_
+pour déployer un war dans un Glassfish embedded.
 
 [source, java]
 ----
 java -jar payara-micro.jar --deploy test.war
 ----
 
-== Wildfly
+== Wildfly Swarm
 
-* Swarm
+image::swarm.png[]
+
+`Wildfly Swarm` permet de construire un _fat_ jar de son application
+avec un Wildfly `custom` embedded.
 
 [source, java]
 ----
-java -jar ./target/myapp-swarm-jar
+java -jar myapp-swarm-jar
 ----
 
 == Démo
@@ -138,3 +173,5 @@ java -jar ./target/myapp-swarm-jar
 https://github.com/binout/micro-javaee
 
 == Merci
+
+image::switch-off.png[]
