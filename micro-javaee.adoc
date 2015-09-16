@@ -108,9 +108,9 @@ Une application autonome avec son environnement d’exécution, son propre cycle
 [quote]
 Euh... bah un WAR doit se déployer dans un serveur d'application ...
 
-== Le serveur d'application, un pré-requis ?
+== FAIL ?
 
-image::pipe.png[]
+image::fry.png[]
 
 == Docker
 

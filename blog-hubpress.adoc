@@ -90,7 +90,7 @@ Introduction à http://asciidoc.org[AsciiDoc].
 TIP: http://asciidoctor.org/docs/user-manual
 ----
 
-== Asciidoc et Blog
+== Asciidoc et Code Source
 
 [source]
 -----
@@ -107,7 +107,7 @@ La version *8* du langage `Java` est sortie le _18 mars 2014_, 17 ans après la 
 [source, java]
 ----
 public class PersonRepository {
-    
+
     public List<Person> getPersonOlderThan(int age) {
         return all()
                 .stream()
@@ -118,7 +118,7 @@ public class PersonRepository {
 ----
 -----
 
-== Asciidoc et Blog
+== Asciidoc et Code Source
 
 image::article-adoc.png[]
 
@@ -138,7 +138,7 @@ On installe sa _forge_ pour son blog ... mais :
 image::jekyll.png[]
 image::awestruct.png[]
 
-== Solution `rapide` 
+== Solution `rapide`
 
 http://wordpress.com ... mais :
 
@@ -153,7 +153,7 @@ Et si on utilisait le même hébergement que le code.
 
 '''
 
-SOLUTION : *GITHUB* ? avec `GITHUP PAGES`
+SOLUTION : *GITHUB* ? avec `GITHUB PAGES`
 
 image::github.png[]
 
@@ -173,7 +173,7 @@ image::hubpress-javaonemorething.png[]
 
 == Démo
 
-video::7gP3i4tHlRM[youtube]
+image::hubpress-demo.png[]
 
 == Synthèse
 
