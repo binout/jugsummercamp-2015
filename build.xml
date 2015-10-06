@@ -24,6 +24,7 @@
 
     <macrodef name="generate-slide">
 			  <attribute name="src"/>
+				<attribute name="conf" default="jugsummercamp"/>
 			  <sequential>
         <asciidoctor:convert
 					sourceDirectory="${basedir}"
@@ -32,6 +33,7 @@
 					templateDir="${basedir}/asciidoctor-backends/haml"
 					backend="deckjs"
 					sourceHighlighter="coderay">
+					  <attribute key="conf" value="@{conf}"/>
 						<attribute key="deckjs_theme" value="swiss"/>
 						<attribute key="deckjs_transition" value="fade"/>
 						<attribute key="navigation" value="true"/>
@@ -46,6 +48,10 @@
 
 		<target name="hubpress" depends="asciidoctor-def,install-deckjs,clean">
 			<generate-slide src="blog-hubpress.adoc"/>
+		</target>
+
+		<target name="hubpress-bdxio" depends="asciidoctor-def,install-deckjs,clean">
+			<generate-slide src="blog-hubpress.adoc" conf="bdx-io"/>
 		</target>
 
 		<target name="micro-javaee" depends="asciidoctor-def,install-deckjs,clean">

@@ -2,7 +2,7 @@
 Benoit Prioux <benoit.prioux@gmail.com>
 :icons: font
 
-image::jugsummercamp.png[float="right"]
+image::{conf}.png[float="right"]
 
 == Me
 
