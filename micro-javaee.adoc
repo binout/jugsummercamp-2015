@@ -144,6 +144,10 @@ java -jar my-app-in-tomee.jar
 ----
 dézippe TomEE localement et déploie l'application.
 
+== Démo TomEE Embedded
+
+image::demo-time.jpeg[]
+
 == Payara
 
 image::payara.png[]
@@ -155,6 +159,10 @@ pour déployer un war dans un Glassfish embedded.
 ----
 java -jar payara-micro.jar --deploy test.war
 ----
+
+== Démo Payara Micro
+
+image::demo-time.jpeg[]
 
 == Wildfly Swarm
 
@@ -168,10 +176,40 @@ avec un Wildfly `custom` embedded.
 java -jar myapp-swarm-jar
 ----
 
-== Démo
+== Démo Wildfly Swarm
 
-https://github.com/binout/micro-javaee
+image::demo-time.jpeg[]
+
+== KumuluzEE
+
+image::duke-award-small.png[float="right"]
+
+image::kumuluz.png[]
+
+`KumuluzEE` permet de bootstrapper une application JavaEE,
+grâce à différents modules pour chaque spécification : kumuluzee-servlet, kumuluzee-cdi, kumuluzee-jpa, ...
+
+[source, java]
+----
+java -cp target/classes:target/dependency/* com.kumuluz.ee.EeApplication
+----
+
+== Démo KumuluzEE
+
+image::demo-time.jpeg[]
+
+== Comparison
+
+[format="csv", options="header",cols="h,m,m,m,m,m"]
+|===
+,Wildfly,Swarm,Payara Micro,TomEE Embedded, KumuluzEE
+Packaging, war + application server, jar, war + jar, jar, classes + target/dependency/
+Size, 10 Ko + 159 Mo, 83 Mo, 10 Ko + 57 Mo, 44 Mo, 15 Mo
+Startup time,7s,4s,9s,2s,1s
+|===
 
 == Merci
+
+https://github.com/binout/micro-javaee
 
 image::switch-off.png[]

@@ -57,6 +57,10 @@
 		<target name="micro-javaee" depends="asciidoctor-def,install-deckjs,clean">
 			<generate-slide src="micro-javaee.adoc"/>
 		</target>
+        
+        <target name="micro-javaee-jug" depends="asciidoctor-def,install-deckjs,clean">
+            <generate-slide src="micro-javaee.adoc" conf="bdxjug"/>
+        </target>
 
 		<target name="all" depends="asciidoctor-def,install-deckjs,clean">
 			<generate-slide src="blog-hubpress.adoc"/>
